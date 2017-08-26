@@ -1,0 +1,24 @@
+.search-bar {
+    margin: 20px auto;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.video-detail .details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.media {
+    cursor: pointer;
+}
+
+.media:hover {
+    background-color: #eee;
+}
