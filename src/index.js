@@ -34,15 +34,23 @@ class App extends Component {
 
         return ( 
         <div>
-            <SearchBar onSearchTermChange={videoSearch}/>
-            <VideoDetail video={this.state.selectedVideo}/>
-            <VideoList 
-            videos={this.state.videos} 
-            onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-            />
+            <div className="row justify-content-center">
+                <SearchBar onSearchTermChange={videoSearch}/>
+            </div>
+            <div className="row">
+                <div className="col-md-8">
+                    <VideoDetail video={this.state.selectedVideo}/>
+                </div>
+                <div className="col-md-4">
+                    <VideoList 
+                        videos={this.state.videos} 
+                        onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                    />
+                </div>
+            </div>
         </div>
         );
     }
 }
 
-ReactDOM.render( < App / > , document.querySelector('.container'))
+ReactDOM.render( < App / > , document.querySelector('.container-fluid'))

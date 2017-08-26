@@ -10,10 +10,9 @@ class SearchBar extends Component {
 
     render() {
         return (
-          <div>
-            <input className="search-bar" onChange = { event => this.onInputChange(event.target.value) }
-            />
-          </div>
+            <div className="form-group col-md-6">
+                <input type="text" className="form-control form-control-lg search-bar" onChange = { event => this.onInputChange(event.target.value)} placeholder="Search" />
+            </div>
         );
     }
 
